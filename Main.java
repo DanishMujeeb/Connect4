@@ -19,7 +19,7 @@ public class Main { // Start of main class
     System.out.println("What would you like to do (Enter 1, 2 or 3)");
     System.out.println();
     System.out.println("1. Play Connect 4 (Multiplayer)");
-    System.out.println("2. View Users Records");
+    System.out.println("2. View Users Wins");
     System.out.println("3. Quit");
     System.out.println();
 
