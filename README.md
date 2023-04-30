@@ -3,6 +3,8 @@ This was a personal project where I used OOP to create Connect 4. I also used Fi
 - Language Used: Java
 - Main Concepts Covered: OOP (Abstraction, Encapsulation, Inheritance, Polymorphism), File I/O, Hash Map, Methods and Arrays
 
+Link to Game: https://replit.com/@DanishMujeeb11/Connect4#Connect4Game/Main.java
+
 Here is how the game will first look. If the user picks to play the game, the names of the users will be asked
 and then the gameboard will appear.
 
