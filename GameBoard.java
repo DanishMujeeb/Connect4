@@ -26,17 +26,17 @@ public class GameBoard { // Start of GameBoard class
     {
         // The following code checks if a player has gotten a connect 4 vertically
         for(int i=0;i<3;i++)
-            for(int j=0;j<7;j++) 
+            for(int j=0;j<7;j++)
             {
                 if(board[i][j].equals("R ") && board[i+1][j].equals("R ") && board[i+2][j].equals("R ") && board[i+3][j].equals("R "))
-                    player1 = true;
-                else if(board[i][j].equals("Y ") && board[i+1][j].equals("Y ") && board[i+2][j].equals("Y ") && board[i+3][j].equals("Y "))
-                    player2 = true;
+                    player1=true;
+                else if(board[i][j].equals("Y ") && board[i+1][j].equals("Y ") && board[i+2][j].equals("Y ") && board[i+3][j].equals("Y "))//checks if player2 gets a connect 4 vertically
+                    player2=true;
             }
 
         // The following code checks if a player has gotten a connect 4 horizontally
         for(int i=0;i<6;i++)
-            for(int j=0;j<4;j++) 
+            for(int j=0;j<4;j++)
             {
                 if(board[i][j].equals("R ") && board[i][j+1].equals("R ") && board[i][j+2].equals("R ") && board[i][j+3].equals("R "))
                     player1 = true;
@@ -44,24 +44,24 @@ public class GameBoard { // Start of GameBoard class
                     player2 = true;
             }
 
-        // The following code checks if a player has gotten a connect 4 diagonally (ascending)
-        for(int i=3;i<6;i++)
+        // The following code checks if a player has gotten a connect 4 diagonally (descending)
+        for(int i=0;i<3;i++)
             for(int j=0;j<4;j++)
             {
-                if(board[i][j].equals("R ") && board[i-1][j+1].equals("R ") && board[i-2][j+2].equals("R ") && board[i-3][j+3].equals("R "))
+                if(board[i][j].equals("R ") && board[i+1][j+1].equals("R ") && board[i+2][j+2].equals("R ") && board[i+3][j+3].equals("R "))
                     player1 = true;
-                else if(board[i][j].equals("Y ") && board[i-1][j+1].equals("Y ") && board[i-2][j+2].equals("Y ") && board[i-3][j+3].equals("Y "))
+                else if(board[i][j].equals("Y ") && board[i+1][j+1].equals("Y ") && board[i+2][j+2].equals("Y ") && board[i+3][j+3].equals("Y "))
                     player2 = true;
             }
 
-        // The following code checks if a player has gotten a connect 4 diagonally (descending)
-        for(int i=3;i<6;i++)
+        // The following code checks if a player has gotten a connect 4 diagonally (ascending)
+        for(int i=0;i<3;i++)
             for(int j=3;j<7;j++)
             {
-                if(board[i][j].equals("R ") && board[i-1][j-1].equals("R ") && board[i-2][j-2].equals("R ") && board[i-3][j-3].equals("R "))
-                    player1 = true;
-                else if(board[i][j].equals("Y ") && board[i-1][j-1].equals("Y ") && board[i-2][j-2].equals("Y ") && board[i-3][j-3].equals("Y "))
-                    player2 = true;
+                if(board[i][j].equals("R ") && board[i+1][j-1].equals("R ") && board[i+2][j-2].equals("R ") && board[i+3][j-3].equals("R "))
+                    player1=true;
+                else if(board[i][j].equals("Y ") && board[i+1][j-1].equals("Y ") && board[i+2][j-2].equals("Y ") && board[i+3][j-3].equals("Y "))
+                    player2=true;
             }
     }
 
